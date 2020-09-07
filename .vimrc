@@ -1,3 +1,6 @@
+; local: ~/.config/nvim/init.vim
+; This is only compatible with nvim.
+
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
