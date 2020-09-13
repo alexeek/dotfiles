@@ -1,6 +1,3 @@
-" local: ~/.config/nvim/init.vim
-" This is only compatible with nvim.
-
 call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -18,6 +15,9 @@ Plug 'rust-lang/rust.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'amiralies/vim-rescript'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'leafo/moonscript-vim'
 call plug#end()
 
 syntax enable
@@ -37,7 +37,9 @@ call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
 
 let g:airlinetheme="gruvbox"
 colo gruvbox
+set bg=light
 
 set number
 set noshowmode
 set termguicolors
+
