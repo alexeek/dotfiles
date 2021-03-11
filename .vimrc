@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'ObserverOfTime/discord.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 syntax enable
@@ -112,3 +113,4 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 nmap <leader>fm <Plug>(coc-format)
 
+autocmd VimEnter * DiscordUpdatePresence
